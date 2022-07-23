@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+    <div id="app" class="grid full">
+        <input type="checkbox" name="menu" id="menu" class="none">
+        <input type="checkbox" name="sns" id="sns" class="none">
+        <header>
+            <div class="inner flex">
+                <div class="slogon">
+                    <a href="/"><img src="./images/logo.png" alt="slogon"></a>
+                </div>
+                <nav class="rel">
+                    <label for="menu"><i class="fa fa-bars"></i><i class="fa fa-close"></i></label>
+                    <div class="menu flex abs">
+                        <div><a href="/sub1">특산품 안내</a></div>
+                        <div><a href="/sub2">이벤트</a></div>
+                        <div><a href="/sub3">구매후기</a></div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section id="index" class="inner flex">
+            <article class="grid">
+                <h1 class="title rel"><span class="abs"></span>특산품 안내<span class="abs"></span></h1>
+                <div class="img"><img src="./images/main1.png" alt="main1"></div>
+                <div class="btn"><a href="/sub1">바로가기</a></div>
+            </article>
+            <article class="grid">
+                <h1 class="title rel"><span class="abs"></span>이벤트<span class="abs"></span></h1>
+                <div class="img"><img src="./images/main2.png" alt="main2"></div>
+                <div class="btn"><a href="/sub2">바로가기</a></div>
+            </article>
+            <article class="grid">
+                <h1 class="title rel"><span class="abs"></span>구매후기<span class="abs"></span></h1>
+                <div class="img"><img src="./images/main3.png" alt="main3"></div>
+                <div class="btn"><a href="/sub3">바로가기</a></div>
+            </article>
+        </section>
+        <footer>
+            <div class="inner">
+                <p class="copy">copyright &copy; Gyeongsangbuk-do. All Rights Reserved.</p>
+                <div class="rel">
+                    <label for="sns"><i class="fa fa-share"></i></label>
+                    <div class="sns flex abs">
+                        <div><img src="./images/sns1.png" alt="instagram" title="instagram"></div>
+                        <div><img src="./images/sns2.png" alt="youtube" title="youtube"></div>
+                        <div><img src="./images/sns3.png" alt="twitter" title="twitter"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
