@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>서울디지텍고등학교 출입명부</title>
+    <link rel="stylesheet" href="../../public/css/reservation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="../js/reser.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <section>
+            <h1>예약 정보 입력</h1>
+
+            <form action="/reservation" method="POST" class="main" id="resv_form">
+                <p>
+                    <label for="name">이름</label><br>
+                    <input class="input" autocomplete="off" type="text" id="name" name="visitorName" placeholder="홍길동">
+                </p>
+                <p>
+                    <label for="phone_number">전화번호</label><br>
+                    <input class="input" autocomplete="off" type="tel" id="phone_number" name="visitorPhoneNumber" placeholder="'-' 없이 입력"></p>
+                <p>
+                    <label for="visit_day">소속</label><br>
+                    <input class="input" autocomplete="off" type="text" id="visit_day" name="resvDate" placeholder="소속"></p>
+                <p>
+                    <label for="reason">방문사유</label><br>
+                    <textarea class="input" id="reason" name="resvReason" placeholder="방문 사유"></textarea></p>
+                <p>
+                    <input type="submit" value="다음" class="next">
+                </p>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
